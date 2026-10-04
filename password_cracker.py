@@ -9,5 +9,6 @@ with ZipFile('whitehouse_secrets.zip') as zf:
             try:
                 zf.extractall(pwd=opt.encode())
                 print (opt)
+                break
             except:
                 pass
